@@ -29,9 +29,9 @@ export const SideBar = () => {
 
 const SideBarIcon = ({ icon, text = "tooltip 💡" }) => {
     return (
-        <div className="sidebar-icon  group after:absolute  after:h-3/6 after:w-6/12 after:left-full ">
+        <div className="sidebar-icon  group  ">
             {icon}
-            <span className="sidebar-tooltip group-hover:scale-100 ">
+            <span className="sidebar-tooltip group-hover:scale-100 pointer-events-none">
                 {text}{" "}
             </span>
         </div>
